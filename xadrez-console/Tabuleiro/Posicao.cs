@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace xadrez_console.Tabuleiro
+namespace xadrez_console.tabuleiro
 {
     internal class Posicao
     {
-        public int Linha { get; set; }
-        public int Coluna { get; set; }
+        public int linha { get; set; }
+        public int coluna { get; set; }
 
         public Posicao(int linha, int coluna)
         {
-            Linha = linha;
-            Coluna = coluna;
+            this.linha = linha;
+            this.coluna = coluna;
         }
 
         public override string ToString()
         {
-            return Linha 
+            return linha 
                 + ", "
-                + Coluna;
+                + coluna;
         }
     }
 }
