@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace xadrez_console.tabuleiro
+﻿namespace xadrez_console.tabuleiro
 {
     internal class Peca
     {
@@ -16,12 +10,15 @@ namespace xadrez_console.tabuleiro
 
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
+        public Peca(Cor cor, Tabuleiro tab)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.cor = cor;
             this.qteMovimentos = 0;
             this.tab = tab;
         }
+
+
+
     }
 }
