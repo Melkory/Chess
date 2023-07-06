@@ -15,7 +15,6 @@ internal class Program
                 try
                 {
                     Console.Clear();
-
                     Tela.imprimirPartida(partida);
 
 
@@ -42,7 +41,8 @@ internal class Program
                 }
             }
 
-            Tela.ImprimirTabuleiro(partida.tab);
+            Console.Clear();
+            Tela.imprimirPartida(partida);
         }
         
         catch (TabuleiroException e) 
